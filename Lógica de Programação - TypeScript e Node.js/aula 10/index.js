@@ -1,0 +1,19 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var A = 35;
+var B = 32;
+var C = 30;
+// se A>B e B>C, imprima feliz
+// se A<B e B>C, imprima confuso
+// se A>B e B não é igual a C, imprima triste
+if (A > B && B > C) {
+    console.log("Feliz");
+}
+else {
+    if (A < B || B > C) {
+        console.log("Confuso");
+    }
+    else if (A > B && !(B == C)) {
+        console.log("Triste");
+    }
+}

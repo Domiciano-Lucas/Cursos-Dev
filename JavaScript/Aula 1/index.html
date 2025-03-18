@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primeira página em JavaScript</title>
+    <script type="text/javascript">
+        function alterarTitulos(){
+        var titulos = document.getElementsByTagName('h2');
+        for(var i = 0; i < titulos.length; i++){
+            console.log(titulos[i]);
+            titulos[i].innerText = "Texto alterado por JS"
+        }
+        document.title = "título alterado"
+    }
+        </script>
+</head>
+<body onload="alterarTitulos()">
+    <h1>Olá, mundo!</h1>
+    <h2>JavaScript não é java</h2>
+    <h2>JavaScript é top</h2>
+
+
+</body>
+</html>
